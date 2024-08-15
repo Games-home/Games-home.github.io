@@ -9,19 +9,27 @@
           background-color: black;
         color: white;
       }
-            .nav{
+            .head img{
+                width: 90vw;
+                align-items: center;
+                margin: auto;
+            }
+      
+      .nav{
                 display: flex;
-                justify-content: space-evenly;
+                justify-content: space-around;
+                padding: 10px 0vw;
                 background-image: linear-gradient(30deg,rgb(97, 95, 86),rgb(13, 26, 5),rgb(36, 112, 212));
                 border-radius: 30px;
-                margin: 15px;
+                max-width: 99vw;
+                flex-wrap: wrap;
             }
             .nav div
             {
-                margin: 5px 10px;
-                padding: 10px 15px;
-                background-color: orange;
-                font-size: larger;
+
+                padding: 1vw;
+                background-image: linear-gradient(30deg,rgb(16, 16, 201),rgb(228, 44, 228));
+                font-size: 5vw;
                 
             }
             .nav div:hover{
@@ -70,7 +78,7 @@
         /*cards design */
             
             #card1,#card2,#card3,#card4,#card5 {
-                margin: 20px;
+                margin: auto;
                 width: 200px;
                 height: 250px;
                 background-color: rgb(145, 132, 114);
@@ -81,7 +89,9 @@
             }
             /*card editing*/ 
             .card{
+                margin: 30px auto;
                 display: grid;
+                grid-gap: 50px;
                 grid-template-columns:repeat(auto-fit,minmax(200px,1fr))
             }
             #card1{
@@ -113,6 +123,9 @@
                 background-size: contain;
                 background-repeat: no-repeat;
                 
+            }
+            #card6,#card7,#card8{
+                display: none;
             }
             .block{
                 
@@ -159,6 +172,10 @@
     </style>
 </head>
 <body >
+    <!-- header -->
+     <div class="head">
+        <img src="resources/Sumit-Salunkhe-15-08-2024.png" alt="">
+     </div>
     <!-- navigation -->
    <div class="nav">
     <div class="btn">Home</div>
