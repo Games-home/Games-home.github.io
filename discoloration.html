@@ -1,0 +1,348 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=       , initial-scale=1.0">
+    <title>Game</title>
+    <style>
+        .body{
+            display: flex;
+            width: fit-content;
+            
+        }
+        .container{
+            align-items: center;
+            background-color: rgb(255, 255, 255);
+            width: fit-content;
+            display: grid;
+            grid-gap:2px;
+            grid-template-columns: repeat(10,1fr);
+            grid-template-rows: 1fr 1fr 1fr;
+            margin: auto;
+           
+            
+            
+        }
+        .box{
+            background-color: grey;
+            width: 8.5vw;
+            max-width: 65.28px;
+            max-height: 65.28px;
+            height: 8.9vw;
+            border: 1px solid black;
+        }
+        .box:hover{
+            background: #9bdd7a;
+        }
+        
+        .clear:hover{
+            cursor: pointer;
+        }
+        .left,.right{
+            cursor: pointer;
+        }
+        .footer{
+            padding: 10px;
+            margin: auto;
+            width: max-content;
+            background-color: azure;
+            display: flex;
+        }
+        .footer div{
+            font-weight: 500;
+            font-size: larger;
+            font-style: italic;
+            background-color: rgb(0, 255, 170);
+            padding: 15px;
+            margin: 5px;
+        }
+        .header img{
+            
+            width: 95vw;
+        }
+        
+    </style>
+</head>
+<body>
+    <div class="header">
+        <img src="/discoloration resources/Discolaration-15-08-2024.png" alt="">
+    </div>
+    <div class="container">
+        <div class="box" id="box1" onclick = "toggle(1)"     ></div>
+        <div class="box" id="box2" onclick = "toggle(2)"     ></div>
+        <div class="box" id="box3" onclick = "toggle(3)"     ></div>
+        <div class="box" id="box4" onclick = "toggle(4)"     ></div>
+        <div class="box" id="box5" onclick = "toggle(5)"     ></div>
+        <div class="box" id="box6" onclick = "toggle(6)"     ></div>
+        <div class="box" id="box7" onclick = "toggle(7)"     ></div>
+        <div class="box" id="box8" onclick = "toggle(8)"     ></div>
+        <div class="box" id="box9" onclick = "toggle(9)"     ></div>
+        <div class="box" id="box10" onclick = "toggle(10)"   ></div>
+        <div class="box" id="box11" onclick = "toggle(11)"   ></div>
+        <div class="box" id="box12" onclick = "toggle(12)"   ></div>
+        <div class="box" id="box13" onclick = "toggle(13)"   ></div>
+        <div class="box" id="box14" onclick = "toggle(14)"   ></div>
+        <div class="box" id="box15" onclick = "toggle(15)"   ></div>
+        <div class="box" id="box16" onclick = "toggle(16)"   ></div>
+        <div class="box" id="box17" onclick = "toggle(17)"   ></div>
+        <div class="box" id="box18" onclick = "toggle(18)"   ></div>
+        <div class="box" id="box19" onclick = "toggle(19)"   ></div>
+        <div class="box" id="box20" onclick = "toggle(20)"   ></div>
+        <div class="box" id="box21" onclick = "toggle(21)"   ></div>
+        <div class="box" id="box22" onclick = "toggle(22)"   ></div>
+        <div class="box" id="box23" onclick = "toggle(23)"   ></div>
+        <div class="box" id="box24" onclick = "toggle(24)"   ></div>
+        <div class="box" id="box25" onclick = "toggle(25)"   ></div>
+        <div class="box" id="box26" onclick = "toggle(26)"   ></div>
+        <div class="box" id="box27" onclick = "toggle(27)"   ></div>
+        <div class="box" id="box28" onclick = "toggle(28)"   ></div>
+        <div class="box" id="box29" onclick = "toggle(29)"   ></div>
+        <div class="box" id="box30" onclick = "toggle(30)"   ></div>
+        <div class="box" id="box31" onclick = "toggle(31)"   ></div>
+        <div class="box" id="box32" onclick = "toggle(32)"   ></div>
+        <div class="box" id="box33" onclick = "toggle(33)"   ></div>
+        <div class="box" id="box34" onclick = "toggle(34)"   ></div>
+        <div class="box" id="box35" onclick = "toggle(35)"   ></div>
+        <div class="box" id="box36" onclick = "toggle(36)"   ></div>
+        <div class="box" id="box37" onclick = "toggle(37)"   ></div>
+        <div class="box" id="box38" onclick = "toggle(38)"   ></div>
+        <div class="box" id="box39" onclick = "toggle(39)"   ></div>
+        <div class="box" id="box40" onclick = "toggle(40)"   ></div>
+        <div class="box" id="box41" onclick = "toggle(41)"   ></div>
+        <div class="box" id="box42" onclick = "toggle(42)"   ></div>
+        <div class="box" id="box43" onclick = "toggle(43)"   ></div>
+        <div class="box" id="box44" onclick = "toggle(44)"   ></div>
+        <div class="box" id="box45" onclick = "toggle(45)"   ></div>
+        <div class="box" id="box46" onclick = "toggle(46)"   ></div>
+        <div class="box" id="box47" onclick = "toggle(47)"   ></div>
+        <div class="box" id="box48" onclick = "toggle(48)"   ></div>
+        <div class="box" id="box49" onclick = "toggle(49)"   ></div>
+        <div class="box" id="box50" onclick = "toggle(50)"   ></div>
+        <div class="box" id="box51" onclick = "toggle(51)"   ></div>
+        <div class="box" id="box52" onclick = "toggle(52)"   ></div>
+        <div class="box" id="box53" onclick = "toggle(53)"   ></div>
+        <div class="box" id="box54" onclick = "toggle(54)"   ></div>
+        <div class="box" id="box55" onclick = "toggle(55)"   ></div>
+        <div class="box" id="box56" onclick = "toggle(56)"   ></div>
+        <div class="box" id="box57" onclick = "toggle(57)"   ></div>
+        <div class="box" id="box58" onclick = "toggle(58)"   ></div>
+        <div class="box" id="box59" onclick = "toggle(59)"   ></div>
+        <div class="box" id="box60" onclick = "toggle(60)"   ></div>
+        <div class="box" id="box61" onclick = "toggle(61)"   ></div>
+        <div class="box" id="box62" onclick = "toggle(62)"   ></div>
+        <div class="box" id="box63" onclick = "toggle(63)"   ></div>
+        <div class="box" id="box64" onclick = "toggle(64)"   ></div>
+        <div class="box" id="box65" onclick = "toggle(65)"   ></div>
+        <div class="box" id="box66" onclick = "toggle(66)"   ></div>
+        <div class="box" id="box67" onclick = "toggle(67)"   ></div>
+        <div class="box" id="box68" onclick = "toggle(68)"   ></div>
+        <div class="box" id="box69" onclick = "toggle(69)"   ></div>
+        <div class="box" id="box70" onclick = "toggle(70)"   ></div>
+        <div class="box" id="box71" onclick = "toggle(71)"   ></div>
+        <div class="box" id="box72" onclick = "toggle(72)"   ></div>
+        <div class="box" id="box73" onclick = "toggle(73)"   ></div>
+        <div class="box" id="box74" onclick = "toggle(74)"   ></div>
+        <div class="box" id="box75" onclick = "toggle(75)"   ></div>
+        <div class="box" id="box76" onclick = "toggle(76)"   ></div>
+        <div class="box" id="box77" onclick = "toggle(77)"   ></div>
+        <div class="box" id="box78" onclick = "toggle(78)"   ></div>
+        <div class="box" id="box79" onclick = "toggle(79)"   ></div>
+        <div class="box" id="box80" onclick = "toggle(80)"   ></div>
+        <div class="box" id="box81" onclick = "toggle(81)"   ></div>
+        <div class="box" id="box82" onclick = "toggle(82)"   ></div>
+        <div class="box" id="box83" onclick = "toggle(83)"   ></div>
+        <div class="box" id="box84" onclick = "toggle(84)"   ></div>
+        <div class="box" id="box85" onclick = "toggle(85)"   ></div>
+        <div class="box" id="box86" onclick = "toggle(86)"   ></div>
+        <div class="box" id="box87" onclick = "toggle(87)"   ></div>
+        <div class="box" id="box88" onclick = "toggle(88)"   ></div>
+        <div class="box" id="box89" onclick = "toggle(89)"   ></div>
+        <div class="box" id="box90" onclick = "toggle(90)"   ></div>
+        <div class="box" id="box91" onclick = "toggle(91)"   ></div>
+        <div class="box" id="box92" onclick = "toggle(92)"   ></div>
+        <div class="box" id="box93" onclick = "toggle(93)"   ></div>
+        <div class="box" id="box94" onclick = "toggle(94)"   ></div>
+        <div class="box" id="box95" onclick = "toggle(95)"   ></div>
+        <div class="box" id="box96" onclick = "toggle(96)"   ></div>
+        <div class="box" id="box97" onclick = "toggle(97)"   ></div>
+        <div class="box" id="box98" onclick = "toggle(98)"   ></div>
+        <div class="box" id="box99" onclick = "toggle(99)"   ></div>
+        <div class="box" id="box100" onclick = "toggle(100)" ></div>
+        
+        
+
+    </div>
+    <div class="footer">
+        <div class="left" onclick="decrese()">◄</div>
+        <div class="clear middle " onclick = "format()">↻</div>
+        <!-- <div class="right" onclick="increase()" >Right </div> -->
+        
+        <div id="moves"  >0 </div>
+    </div>
+
+
+
+
+
+
+
+
+    <!-- java script here below  -->
+    <script>
+        var moves=0;
+        var btn = document.getElementsByClassName('box');
+        //current grid is grid-1
+        var grid=4;
+
+        /*
+        //temporary numbering to all grids till 100
+        const a=[100];
+        for(var i=0;i<100;i++){
+           a[i]=false;
+           btn[i].innerHTML=i+1;
+        }  
+           */
+        
+
+
+
+        // clears the cells resets color to grey 
+    function format(){
+
+        moves=0;
+        document.getElementById("moves").innerHTML=moves;
+        console.log("mov",moves);
+        for(var i=0;i<100;i++){btn[i].style.backgroundColor = "grey";}
+    
+    
+        }
+
+
+     //increases the grid square 
+     function increase()
+     {  format();
+        ++grid;
+        moves=0;
+        document.getElementById("moves").innerHTML=moves;
+        
+        let size =document.getElementsByClassName("container");
+        size[0].style.gridTemplateColumns = `repeat(${grid}, 1fr)`
+        for(var i=1;i<=1+(grid-1)*10;i=i+10){
+            for(var j=i;j<=i+grid-1;j++){
+                on(j);
+                
+            }
+        }
+        //arrange elemts by grid size
+        //console.log("grid",grid);
+
+     }
+
+
+
+          // derease the grid square 
+          function decrese(){
+            moves=0;
+            document.getElementById("moves").innerHTML=moves;
+            --grid;
+            --grid;
+            for(var i=1;i<=100;i++){off(i)}
+            increase();
+    
+         }
+     //////
+         decrese();
+        
+   
+  
+        
+         
+     
+     
+// off function hides on shows 
+function off(i)
+{
+    btn[i-1].style.opacity = "0";
+    btn[i-1].style.display = "none";
+    
+}
+
+function on(i)
+{
+    
+    btn[i-1].style.opacity = "1";
+    btn[i-1].style.display = "block";
+
+}
+
+
+     //3*3 grid base starting hide others 
+     
+     
+
+    var checking=true;
+    //checks and stores the values 
+    function check()
+    {   
+        checking=true;
+        for(var i=1;i<=+1+(grid-1)*10;i=i+10){
+            for(var j=i;j<=+i+grid-1;j++){
+                if (btn[j-1].style.backgroundColor != "yellow"){
+                    checking=checking&&false;
+                    
+                }
+                console.log(j,btn[j-1].style.backgroundColor,checking);
+                
+
+                
+            }
+        } 
+        //executes only if checking is true for all the boxes of grid 
+        console.log("hi")
+        if(checking)
+        {console.log("inc");
+        format();
+            increase();}
+        
+    }
+
+
+
+     function change(n){
+        if (btn[n-1].style.backgroundColor!="yellow"){
+            btn[n-1].style.backgroundColor = "yellow";
+
+     }
+     else{
+        btn[n-1].style.backgroundColor = "grey";  
+    }
+    
+    }
+    
+    // changes the color of the 5 boxes around edges making a +
+     function toggle(n)
+     
+     {  ++moves;
+        document.getElementById("moves").innerHTML=moves;
+         change(n);
+         if(n>10){change(n-10);}
+         if(n<91){change(n+10); }
+         if(n%10!=1){change(n-1);}
+         if(n%10!=0){change(n+1);}
+        //if this n block is yellow only then check the rest of the boxes  
+         if(btn[n].style.backgroundColor=='yellow'){
+            check();
+         }
+         
+        }
+      
+     
+     
+     
+     
+        
+      
+
+    </script>
+</body>
+</html>
