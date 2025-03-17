@@ -9,199 +9,36 @@
     <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-5118825448969622"
      crossorigin="anonymous"></script>
     <title>Home Page</title>
-    <style>
-        body{
-          background-color: black;
-        color: white;
-      }
-            .head img{
-                width: 90vw;
-                align-items: center;
-                margin: auto;
-            }
-      
-      .nav{
-                display: flex;
-                justify-content: space-around;
-                padding: 10px 0vw;
-                background-image: linear-gradient(30deg,rgb(97, 95, 86),rgb(13, 26, 5),rgb(36, 112, 212));
-                border-radius: 30px;
-                max-width: 99vw;
-                flex-wrap: wrap;
-            }
-            .nav div
-            {
-
-                padding: 1vw;
-                background-image: linear-gradient(30deg,rgb(16, 16, 201),rgb(228, 44, 228));
-                font-size: 5vw;
-                
-            }
-            .nav div:hover{
-                background-color: white;
-                color: black;
-                border-radius: 20px;
-
-            }
-
-            /*
-            car moving animation 
-            */
-            .car-movement {
-                overflow: hidden;
-                font-size: 40px;
-                height: 50px;
-              }
-              
-              .car-movement > .car {
-                position: relative;
-                display: inline-block;
-                animation: linear infinite;
-                animation-name: run;
-                animation-duration: 5s;
-              }
-              
-              
-              @keyframes run {
-                0% {
-                  transform: rotateY(180deg);
-                  left: -100px;
-                }
-                50% {
-                  transform: rotateY(180deg);
-                  left: 100%;
-                }
-                51% {
-                  transform: rotateY(0deg);
-                  left: calc(100% + 100px);
-                }
-                100% {
-                  transform: rotateY(0deg);
-                  left: -100px;
-                }
-            }
-        /*cards design */
-            
-            #card1,#card2,#card3,#card4,#card5,#card6,#card7 {
-                margin: auto;
-                width: 200px;
-                height: 250px;
-                background-color: rgb(145, 132, 114);
-                color: aqua;
-                font-size: larger;
-                text-align: center;
-                border-radius: 20px;
-            }
-            /*card editing*/ 
-            .card{
-                margin: 30px auto;
-                display: grid;
-                grid-gap: 50px;
-                grid-template-columns:repeat(auto-fit,minmax(200px,1fr))
-            }
-            #card1{
-                background-image: url(resources/tic\ tac\ toe.png);
-                background-size: contain;
-                background-repeat: no-repeat;
-                
-            }
-            #card2{
-                background-image: url(resources/discoloration.png);
-                background-size: contain;
-                background-repeat: no-repeat;
-                
-            }
-            #card3{
-                background-image: url(resources/sudoku.png);
-                background-size: contain;
-                background-repeat: no-repeat;
-                
-            }
-            #card4{
-                background-image: url(resources/dmart.webp);
-                background-size: contain;
-                background-repeat: no-repeat;
-                
-            }
-            #card5{
-                background-image: url(resources/prime.jpg);
-                background-size: contain;
-                background-repeat: no-repeat;
-                
-            }
-            #card6{
-                background-image: url(resources/discoloration.png);
-                background-size: contain;
-                background-repeat: no-repeat;
-                
-            }
-
-            #card7,#card8{
-                display: none;
-            }
-            .block{
-                
-                display: flex;
-                flex-flow: column;
-                justify-content: space-between;
-            }
-            .text{
-                color: black;
-                font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-                font-weight: 400;
-                font-size: larger;
-                backdrop-filter: blur(10px);
-                border-radius: 10px;
-                margin: 10px auto;
-                padding: 0px 5px;
-
-            }
-            .btn{
-                color: white;
-                background-color: rgb(98, 207, 213);
-                padding: 10px;
-                padding-top: 19px;
-                border-radius: 0px 0px 20px 20px;
-                margin: 0px;
-                
-                text-align: bottom;
-                
-            }
-            .nav .btn{
-              box-sizing: border-box;
-              border-radius: 20px;
-            }
-            .btn:hover{
-                
-                cursor: pointer;
-            }
-
-
-            
-              
-              
-
-    </style>
+    <!-- linking style sheet -->
+    <link rel="stylesheet" href="style.css">
+    
 </head>
 <body >
+    <!-- navigation -->
+    <nav id="navbar">
+        <div id="logo">
+            <img src="resources/Sumit-Salunkhe-15-08-2024.png" alt="LOGO HERE">
+        </div>
+        <ul>
+            <li class="item"><a href="#home">Home</a></li>
+            <li class="item"><a href="#services-container">Services</a></li>
+            <li class="item"><a href="#client-section">Our Clients</a></li>
+            <li class="item"><a href="#contact">Contact Us</a></li>
+        </ul>
+    </nav>
+    
     <!-- header -->
      <div class="head">
-        <img src="resources/Sumit-Salunkhe-15-08-2024.png" alt="">
+        <img src="resources/Sumit-Salunkhe-15-08-2024.png" alt="logo image of sumit salunkhe">
      </div>
-    <!-- navigation -->
-   <div class="nav">
-    <div class="btn">Home</div>
-    <div class="btn">Books</div>
-    <div class="btn">Projects</div>
-    <div class="btn">Contact Us</div>
-   </div> 
 
    <!-- amination  -->
-   <div class="animation">
+    <!-- amination of a car comment out for now -->
+   <!-- <div class="animation">
     <div class="car-movement">
         <div class="car">🚕</div>
       </div>
-   </div>
+   </div> -->
 
 
    <!-- cards  -->
@@ -209,76 +46,115 @@
         
         
         <!-- cards -->
-        <div class="block" id="card1">
-            <div class="text" id="text1">Tic Tac Toe</div>
-            
-        <div class="btn" id="btn1 "  onclick="window.location.href='tic tac toe/index.html'">Visit</div>
+         <div class="section" id="section1">
         
+            <div class="block" id="card1">
+                 <div class="text" id="text1">Tic Tac Toe</div>
+                 
+                 <div class="btn" id="btn1 "  onclick="window.location.href='tic tac toe/index.html'">Visit</div>
+                 
+                </div>
+
+            <div class="contentofblock" id="contentblock1">hi</div>
+                
         </div>
         
         
         <!-- cards -->
-        <div class="block" id="card2">
-            
-            <div class="text" id="text2">Discoloration</div>
-            
-        <div class="btn" id="btn2" onclick="window.location.href='discoloration.html'">Visit</div>
+         <div class="section" id="section2">
+
+            <div class="block" id="card2">
+                 
+                 <div class="text" id="text2">Discoloration</div>
+                 
+                 <div class="btn" id="btn2" onclick="window.location.href='discoloration.html'">Visit</div>
+             </div>
+
+            <div class="contentofblock" id="contentblock2">hi</div>
         </div>
         
         
         <!-- cards -->
-        <div class="block" id="card3">
-            
-            <div class="text" id="text3">Sudoku</div>
-            
-        <div class="btn" id="btn3" onclick="window.location.href='sudoku/index.html'">Visit</div>
+         <div class="section" id="section3">
+
+            <div class="block" id="card3">
+                 
+                 <div class="text" id="text3">Sudoku</div>
+                 
+                 <div class="btn" id="btn3" onclick="window.location.href='sudoku/index.html'">Visit</div>
+                </div>
+            <div class="contentofblock" id="contentblock3">hi</div>
         </div>
         
         
         <!-- cards -->
-        <div class="block" id="card4">
-            
-           <div class="text" id="text4">Dmart</div>
-            
-        <div class="btn" id="btn4" onclick="window.location.href='https://sumitsalunkhe777.github.io/Dmart/'">Visit</div>
+         <div class="section" id="section4">
+
+             <div class="block" id="card4">
+                 
+                 <div class="text" id="text4">Dmart</div>
+                 
+                 <div class="btn" id="btn4" onclick="window.location.href='https://sumitsalunkhe777.github.io/Dmart/'">Visit</div>
+                </div>
+                <div class="contentofblock" id="contentblock4">hi</div>
         </div>
         
         
         <!-- cards -->
-        <div class="block" id="card5">
-            
-            <div class="text" id="text5">Prime </div>
-            
-            <div class="btn" id="btn5" onclick='window.location.href="https://sumitsalunkhe777.github.io/prime_6/"'>Visit</div>
+         <div class="section" id="section5">
+
+             <div class="block" id="card5">
+                 
+                 <div class="text" id="text5">Prime </div>
+                 
+                 <div class="btn" id="btn5" onclick='window.location.href="https://sumitsalunkhe777.github.io/prime_6/"'>Visit</div>
+                </div>
+                <div class="contentofblock" id="contentblock5">hi</div>
              </div>
 
              
         <!-- cards -->
-        <div class="block" id="card6">
-            
-            <div class="text" id="text6">Discoloration Solver </div>
-            
-            <div class="btn" id="btn6" onclick='window.location.href="light_out_solve.html"'>Visit</div>
+         <div class="section" id="section6">
+
+             <div class="block" id="card6">
+                 
+                 <div class="text" id="text6">Discoloration Solver </div>
+                 
+                 <div class="btn" id="btn6" onclick='window.location.href="light_out_solve.html"'>Visit</div>
+                </div>
+                <div class="contentofblock" id="contentblock6">hi</div>
              </div>
 
 
         <!-- cards -->
-        <div class="block" id="card7">
-            
-            <div class="text" id="text7">Prime </div>
-            
-            <div class="btn" id="btn7" onclick='window.location.href="https://sumitsalunkhe777.github.io/prime_6/"'>Visit</div>
+         <div class="section" id="section7">
+
+             <div class="block" id="card7">
+                 
+                 <div class="text" id="text7">Prime </div>
+                 
+                 <div class="btn" id="btn7" onclick='window.location.href="https://sumitsalunkhe777.github.io/prime_6/"'>Visit</div>
+                </div>
+                <div class="contentofblock" id="contentblock7">hi</div>
              </div>
 
 
         <!-- cards -->
-        <div class="block" id="card8">
-            
-            <div class="text" id="text8">Prime </div>
-            
-            <div class="btn" id="btn8" onclick='window.location.href="https://sumitsalunkhe777.github.io/prime_6/"''>Visit</div>
+         <div class="section" id="section8">
+
+             <div class="block" id="card8">
+                 
+                 <div class="text" id="text8">Prime </div>
+                 
+                 <div class="btn" id="btn8" onclick='window.location.href="https://sumitsalunkhe777.github.io/prime_6/"''>Visit</div>
+                </div>
+                <div class="contentofblock" id="contentblock8">hi</div>
              </div>
 
+    </div>
+
+    <div>
+        recusandae modi aliquam placeat porro? Nemo tempore, a, sunt nihil, doloremque molestiae earum nulla inventore odit reprehenderit voluptas incidunt!cipit dicta voluptate, maxime vel aut voluptatibus repellat vero error ratione! Eius nulla porro repellat consequuntur unde repellendus ullam ipsam eum quis illum. Quia tempora reprehenderit, ipsam doloremque eum cum quam deleniti hic totam? Omnis provident aspernatur eum eos nisi. Nemo praesentium soluta, numquam quam sunt assumenda tempora harum laborum, molestias excepturi distinctio officiis reiciendis culpa quos. Magnam eum eius velit perspiciatis ex repellendus alias dolores suscipit, repellat facere ipsum quos soluta aspernatur minima ut error beatae earum reprehenderit voluptatem animi ipsa dolorum! Repellat vero sit at quaerat magnam aspernatur consequuntur id fugit soluta ipsa cumque, neque, magni veritatis accusantium vitae quam ducimus facilis architecto voluptate ratione! Repellendus magnam culpa odit quae aut pariatur eaque facere officiis expedita sunt iure in, deserunt obcaecati doloribus alias nihil blanditiis! Quisquam, vero! Tenetur est excepturi fugit corporis. Consequatur eos ullam id totam dignissimos, ipsum voluptatibus voluptatum, exercitationem tempora doloribus provident deserunt facilis, quos voluptate culpa quod. Illum eos quia amet sequi velit. Qui ducimus eum, cumque excepturi tempora enim dolorum asperiores ratione magni provident? Neque placeat atque magni fugiat eveniet quam enim, repudiandae itaque dolor, deserunt rem magnam. Magni assumenda autem officia numquam magnam praesentium non voluptatibus odio fugiat adipisci quisquam, soluta voluptates sunt quam ullam beatae voluptatum sequi nihil? Possimus vero rerum ad consectetur esse libero quae suscipit molestiae praesentium recusandae. At laborum iusto mollitia soluta repellat magni itaque vel voluptas tenetur porro eum sint repudiandae unde, molestias numquam, corrupti, sunt facere earum aspernatur recusandae! Quis iure eveniet voluptate incidunt beatae autem, vitae molestiae ut blanditiis sunt ipsum pariatur unde nisi. Perspiciatis ullam et exercitationem omnis numquam beatae pariatur error odio ipsum ut voluptate facere nostrum voluptatibus magnam nisi asperiores dicta blanditiis, quasi tenetur in. Officia eligendi deleniti adipisci eveniet, quam laboriosam blanditiis modi recusandae, tempore exercitationem ab quas sapiente eum? Tempora enim, accusamus minus voluptatibus mollitia ex ipsum ad quis eligendi exercitationem nulla voluptate impedit molestiae illum quasi ab iure odit quo? Porro, odio excepturi. Odio dignissimos et cupiditate, recusandae id pariatur nemo deserunt consequuntur sequi similique sint veniam blanditiis nesciunt commodi quaerat labore? Incidunt molestiae ea officia impedit officiis minima sint fugiat aut, animi, maiores dicta? Inventore accusamus facere minus distinctio repellendus perspiciatis, ipsum quia magnam? Obcaecati aperiam perspiciatis cupiditate expedita aliquam, iure cumque iste possimus neque quos laboriosam asperiores vitae aut rem eveniet fuga vero, ratione fugiat omnis assumenda, praesentium voluptas consequatur distinctio esse! Quo, maiores dicta nulla temporibus veniam nam officiis magni? Atque facilis aliquam fuga perspiciatis adipisci. Cumque ratione ipsa esse enim id consequatur facere quidem laboriosam rem vitae, architecto dolores explicabo corporis rerum magnam. Veritatis, distinctio neque velit earum magni unde, et ut esse ratione obcaecati quam animi deserunt repellat cupiditate officia dignissimos. Odio voluptatibus sunt facilis et dolorum distinctio illum accusantium libero iusto placeat cupiditate facere, tenetur, impedit, quasi iure? Optio rerum nihil odit, commodi temporibus exercitationem debitis voluptates ipsum inventore aspernatur ut est. Ut iste est aperiam similique ipsam, vel autem impedit, suscipit cumque voluptatibus facilis eligendi vitae, sed atque. Adipisci, nihil sapiente? Voluptatum nam molestias quidem aspernatur at error, pariatur delectus magni neque eius ea molestiae odit quas, cupiditate fugiat qui libero, quisquam beatae. Dignissimos enim dicta magni voluptas, cupiditate magnam dolores sequi illo odit possimus, iste nulla amet, ullam praesentium dolorum reiciendis id nesciunt nemo doloremque quia laboriosam. Iste voluptatem dolores debitis laborum assumenda praesentium non fuga. Ad nisi magnam nihil officia, perspiciatis facilis et magni architecto quibusdam accusamus amet iste sed autem aperiam deleniti iure quas provident est minus esse error qui sapiente aspernatur eligendi! Odit tempora quos blanditiis ab perspiciatis autem quasi eaque dolore. Distinctio, reprehenderit? Laboriosam culpa quae eligendi amet in obcaecati voluptas provident repudiandae quas adipisci! Blanditiis aliquid et quod sequi accusantium illo culpa omnis facere temporibus fugiat veritatis ad ratione sit nesciunt voluptas facilis quos, ipsa, similique eum obcaecati at beatae, error aliquam assumenda. Expedita iusto at dolorum. Culpa sunt sed ratione vitae fuga repellat fugiat tenetur, officiis doloremque sapiente explicabo maiores ipsum voluptate expedita? Ab dolore deleniti provident vero voluptatem alias rerum, totam iure, odit neque officiis. Dolor minus sunt nobis quam modi! Nisi neque adipisci voluptatem recusandae obcaecati officiis saepe iure, laboriosam nam quaerat repellat quas similique, nesciunt at aperiam est rem? Quidem, at numquam blanditiis libero sequi cupiditate tempore animi aspernatur perspiciatis aliquam! Error delectus adipisci, iusto ipsum dolor fuga iste, labore incidunt ratione ducimus, nulla veniam harum sit. Aut accusantium repellendus sapiente odio dolores quo, enim earum nulla numquam laboriosam dolor quaerat! Adipisci ab, illum quisquam consequuntur quod quis iste dolorum ex beatae soluta dicta nobis harum cumque! Incidunt voluptate sapiente, quae dignissimos soluta voluptatem necessitatibus labore consequuntur doloribus, inventore porro, illum obcaecati rerum ad eaque dolorum? Fuga, exercitationem sequi explicabo quis rem unde officiis, illum impedit a ad magni, ducimus quaerat repudiandae voluptas. Similique laboriosam optio nobis aperiam facilis eligendi aut a, excepturi, recusandae eius culpa eum vel quaerat, ullam tenetur dolores illum repellendus? Veritatis possimus nulla debitis error accusamus voluptates alias, explicabo omnis enim. Cupiditate neque odit numquam eius repellendus accusantium autem, totam animi reiciendis qui iusto laudantium quod dolorum sint sunt esse. Illo laudantium consectetur iure perferendis. Hic error nisi minima quibusdam, mollitia consequuntur, soluta voluptates nam aut quidem in veniam. Suscipit blanditiis quo incidunt libero deleniti explicabo facere est dolorum eos omnis iste soluta porro officia illo, enim magni corporis ea hic aut doloribus? Ipsa officiis exercitationem culpa enim aspernatur quis incidunt optio, perspiciatis molestiae? Illum ratione deserunt error cupiditate, quos laborum veritatis reprehenderit optio corporis recusandae. Odit hic vero alias, cumque doloremque laboriosam placeat, necessitatibus unde deserunt, consectetur sunt a harum voluptatum asperiores perspiciatis aliquam. Ipsa temporibus consectetur, blanditiis libero voluptatibus culpa dolore animi aperiam sunt nemo laboriosam tenetur molestiae id veniam officiis? Quia quasi quae voluptatem dicta fugiat. Quam blanditiis possimus officiis. Ab incidunt unde ipsa enim dignissimos! Magni excepturi, enim consequatur atque labore adipisci assumenda. Accusantium voluptates quaerat eaque aut deserunt, optio, corrupti aliquid illum facilis earum nihil assumenda laborum quasi beatae ipsa ex nemo quisquam velit quam? Nemo non ut tempora accusamus, incidunt sed error quam minima eaque doloremque animi maiores hic aliquid. Fugiat rerum culpa dolorem provident quibusdam veniam animi consequatur voluptatibus, est voluptatum quae nihil officia ducimus qui iusto nemo ratione obcaecati omnis, sequi distinctio doloremque esse totam dolorum! Debitis facere blanditiis deleniti sunt quibusdam neque sequi eaque assumenda sit tenetur. Dolorum vitae sit aliquid ratione quasi rerum nesciunt fuga soluta delectus similique tempora alias adipisci voluptate mollitia impedit consequatur ad ipsa, dolore, excepturi architecto eligendi beatae officia ducimus perspiciatis. Provident magnam eveniet, doloremque ipsam, rerum rem fuga omnis error iste voluptate ad eaque dicta asperiores blanditiis illum commodi quod obcaecati reprehenderit neque quia expedita ratione! Autem ad officiis ex sapiente hic minus perspiciatis a numquam nam qui molestiae cupiditate incidunt nostrum harum neque, laudantium, rem nisi quisquam quod expedita architecto exercitationem! Earum facere maxime eos modi, adipisci deleniti rerum vero dolorum a atque ea beatae dignissimos qui asperiores voluptatem, perferendis cumque est voluptatum magni. Placeat, dolores porro. Corrupti voluptates explicabo ipsa natus voluptatem, debitis, dolorum excepturi aliquam adipisci harum, eum commodi nesciunt eaque! Quae itaque ut suscipit quas eaque accusamus, quod, culpa possimus pariatur reiciendis esse saepe nam delectus in aperiam! Ducimus fuga animi, impedit quis enim cumque! Necessitatibus, placeat asperiores. Molestiae cum numquam praesentium dolor aliquam quasi aperiam suscipit, beatae, accusamus illo laudantium. Minus in consequuntur ex officiis corporis ea molestias ratione beatae eius autem commodi tempore temporibus dicta rem at, reprehenderit suscipit exercitationem consequatur. Facilis officia maxime ipsam ratione consequuntur, unde eius earum fugiat veniam omnis voluptatum nostrum laborum quasi, velit voluptatem obcaecati non odit quae cum soluta corrupti natus! Consequuntur dolorem earum fugit aspernatur reiciendis. Tempore, dignissimos totam ea perspiciatis eum ut hic voluptate eaque debitis laudantium consequuntur molestias cumque! Tenetur atque sit itaque, hic magni perferendis dolorum pariatur, ipsum soluta impedit nihil a molestias iusto praesentium delectus nam voluptates consequatur in voluptate fuga architecto facere possimus quasi eaque! Officia iure doloribus alias architecto minus dicta provident fugiat similique dolores laudantium earum neque asperiores incidunt laborum voluptate tenetur voluptatem distinctio explicabo hic aliquam beatae, enim odit nobis cumque. Enim sit praesentium facere saepe dicta delectus quis quibusdam, doloribus rerum? Temporibus ad quisquam maxime iusto voluptas ducimus rem illo deleniti cum debitis harum officiis nobis nesciunt vero, placeat tenetur recusandae quam laborum reiciendis quod dolore odio enim? Obcaecati facere optio delectus perferendis corrupti et eius animi explicabo commodi recusandae minima voluptatem dicta, excepturi sit saepe cum molestiae eveniet maxime sint vero sequi. Dolore reprehenderit voluptatem voluptates tempore exercitationem aliquam rem, eligendi unde aliquid velit facere nobis, ab consequatur blanditiis mollitia cum fugit magni! Aut illo error, repellendus sit cum blanditiis esse libero optio quod, earum sed tempora labore nobis minus quia cumque dolores praesentium, magni aliquam laudantium. Rem aspernatur nesciunt maxime molestiae quis culpa aliquam doloremque architecto assumenda.
     </div>
 </body>
 </html>
