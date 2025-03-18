@@ -2,7 +2,18 @@
         
         
         /* css for mobile and tab hiding sumit logo and aligning centre */
-        @media (max-width:900px) {
+        @media only screen and (max-width: 450px) {
+          #navbar ul li:nth-child(2n){
+            margin-top: 20px;
+          }
+          #navbar ul li{
+            margin-left: -10vw;
+          }
+          #navbar ul li:last-child{
+            margin-left: -20vw;
+          }
+        }
+        @media only screen and (max-width:860px) {
           .head{
             display: none;
           }
@@ -25,10 +36,10 @@
           }
           #navbar ul li{
             margin-top: -10px;
-          background-color: bisque;
+          /* background-color: bisque; */
         }
           #navbar ul li{
-            background-color: rgb(71, 66, 66);
+            /* background-color: rgb(71, 66, 66); */
             /* background-color: aquamarine;   */
           }
           #navbar ul li{
