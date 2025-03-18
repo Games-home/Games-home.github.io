@@ -88,10 +88,14 @@
         background-repeat: no-repeat;
         
     }
-
-    #card7,#card8{
-        /* display: none; */
+    #card8{
+        background-image: url(resources/snake.png);
+        background-size: contain;
+        background-repeat: no-repeat;
+        
     }
+
+    
 
     .btn{
         color: white;
