@@ -24,6 +24,7 @@
 #navbar{
     z-index: 2;
     display: flex;
+    flex-wrap: wrap;
     align-items: center;
     position: sticky;
     top: 0px;
@@ -59,11 +60,22 @@
 /* Navigation Bar: List Styling */
 
 #navbar ul{
+    /* background-color: aquamarine; */
+    max-width: 95vw;
     display: flex;
+    /* width: 95vw; */
+    /* margin: auto; */
     font-family: 'Baloo Bhai', cursive;
+    /* align-content: center; */
+    justify-content: space-around;
+    overflow: auto;
 }
 
 #navbar ul li{ 
+    /* width: fit-content; */
+    max-width: 24vw;
+    /* margin: auto; */
+    /* background-color: rgb(189, 153, 106); */
     list-style: none;
     font-size: 1.3rem;
 }
@@ -117,123 +129,14 @@
                   left: -100px;
                 }
             }
-            /* section this contains all blocks and cards */
-            .section{
-                
-                display: flex;
-                
-
-                background-color: rgb(76, 72, 67);
-                padding: 10px;
-                margin: 20px;
-                
-                border-radius: 20px;
-
-                
-                
-            }
-            .section .contentofblock{
-                text-decoration: underline;
-            }
-            /* this hold all the cards  */
-            .block{
-                
-                display: flex;
-                flex-flow: column;
-                justify-content: space-between;
-            }
-        /*cards design */
-            
-            #card1,#card2,#card3,#card4,#card5,#card6,#card7 {
-                margin: auto;
-                width: 200px;
-                height: 250px;
-                background-color: rgb(145, 132, 114);
-                color: aqua;
-                font-size: larger;
-                text-align: center;
-                border-radius: 20px;
-            }
-            /*card editing*/ 
-            /* .card{
-                margin: 30px auto;
-                display: grid;
-                grid-auto-flow: row;
-                grid-gap: 50px;
-                grid-template-rows:repeat(auto-fit,minmax(200px,1fr))
-            } */
-            #card1{
-                background-image: url(resources/tic\ tac\ toe.png);
-                background-size: contain;
-                background-repeat: no-repeat;
-                
-            }
-            #card2{
-                background-image: url(resources/discoloration.png);
-                background-size: contain;
-                background-repeat: no-repeat;
-                
-            }
-            #card3{
-                background-image: url(resources/sudoku.png);
-                background-size: contain;
-                background-repeat: no-repeat;
-                
-            }
-            #card4{
-                background-image: url(resources/dmart.webp);
-                background-size: contain;
-                background-repeat: no-repeat;
-                
-            }
-            #card5{
-                background-image: url(resources/prime.jpg);
-                background-size: contain;
-                background-repeat: no-repeat;
-                
-            }
-            #card6{
-                background-image: url(resources/discoloration.png);
-                background-size: contain;
-                background-repeat: no-repeat;
-                
-            }
-
-            #card7,#card8{
-                /* display: none; */
-            }
-
-            
-            .text{
-                color: black;
-                font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-                font-weight: 400;
-                font-size: larger;
-                backdrop-filter: blur(10px);
-                border-radius: 10px;
-                margin: 10px auto;
-                padding: 0px 5px;
-
-            }
-            .btn{
-                color: white;
-                background-color: rgb(98, 207, 213);
-                padding: 10px;
-                padding-top: 19px;
-                border-radius: 0px 0px 20px 20px;
-                margin: 0px;
-                
-                text-align: bottom;
-                
-            }
+     
+           
+           
             .nav .btn{
               box-sizing: border-box;
               border-radius: 20px;
             }
-            .btn:hover{
-                
-                cursor: pointer;
-            }
+            
 
 
             
