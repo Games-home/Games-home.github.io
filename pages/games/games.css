@@ -14,19 +14,22 @@
         
     }
     .section .contentofblock{
-        text-decoration: underline;
+        font-size: 1.5rem;
+        color: white;
+        /* text-decoration: underline; */
     }
     /* this hold all the cards  */
     .block{
-        
+        min-width: 200px;
         display: flex;
         flex-flow: column;
         justify-content: space-between;
+        margin-right: 15px;
     }
 /*cards design */
     
     #card1,#card2,#card3,#card4,#card5,#card6,#card7 {
-        margin: auto;
+        /* margin: auto; */
         width: 200px;
         height: 250px;
         background-color: rgb(145, 132, 114);
@@ -79,9 +82,15 @@
         background-repeat: no-repeat;
         
     }
+    #card7{
+        background-image: url(resources/snake.png);
+        background-size: contain;
+        background-repeat: no-repeat;
+        
+    }
 
     #card7,#card8{
-        display: none;
+        /* display: none; */
     }
 
     .btn{
