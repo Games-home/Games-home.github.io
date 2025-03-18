@@ -1,4 +1,41 @@
 
+        
+        
+        /* css for mobile and tab hiding sumit logo and aligning centre */
+        @media (max-width:900px) {
+          .head{
+            display: none;
+          }
+          
+          #navbar::before{
+            content: "";
+            background-color: rgb(71, 66, 66);
+            position: absolute;
+            top:0px;
+            left:0px;
+            height: 100%;
+            width:100%;
+            z-index: -1;
+            opacity: 0;
+            border-radius: 50px 10px 50px 10px;
+            
+        }
+          #navbar div{
+            margin: 20px;
+          }
+          #navbar ul li{
+            margin-top: -10px;
+          background-color: bisque;
+        }
+          #navbar ul li{
+            background-color: rgb(71, 66, 66);
+            /* background-color: aquamarine;   */
+          }
+          #navbar ul li{
+            width: fit-content;
+          }
+        }
+        
         body{
           background-color: black;
         color: white;
@@ -25,7 +62,7 @@
     z-index: 2;
     display: flex;
     flex-wrap: wrap;
-    align-items: center;
+    justify-content: center;
     position: sticky;
     top: 0px;
 
@@ -49,10 +86,11 @@
 /* Navigation Bar: Logo and Image */
 #logo{
     margin: 10px 34px;
+    /* background-color: aquamarine; */
 }
 
 #logo img{
-    height: 59px;
+    height: 50px;
     margin: 3px 6px;
 }
 
@@ -61,19 +99,20 @@
 
 #navbar ul{
     /* background-color: aquamarine; */
-    max-width: 95vw;
+    max-width:60vw;
     display: flex;
     /* width: 95vw; */
-    /* margin: auto; */
+    margin: auto;
     font-family: 'Baloo Bhai', cursive;
     /* align-content: center; */
-    justify-content: space-around;
-    overflow: auto;
+    justify-content: center;
+    /* overflow: auto; */
+
 }
 
 #navbar ul li{ 
     /* width: fit-content; */
-    max-width: 24vw;
+    /* max-width: 24vw; */
     /* margin: auto; */
     /* background-color: rgb(189, 153, 106); */
     list-style: none;
@@ -81,9 +120,11 @@
 }
 
 #navbar ul li a{
+    width: max-content;
+    /* background-color: rgb(5, 49, 34); */
     color: white;
     display: block;
-    padding: 3px 22px;
+    padding: 3px 1vw;
     border-radius: 20px;
     text-decoration: none;
 }
