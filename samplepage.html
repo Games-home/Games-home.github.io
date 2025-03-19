@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-5118825448969622"
+     crossorigin="anonymous"></script>
+    <title>Sample</title>
+
+    <style>
+           /* css for mobile and tab hiding sumit logo and aligning centre */
+           @media only screen and (max-width: 450px) {
+            #navbar ul li:nth-child(2n){
+              margin-top: 20px;
+            }
+            #navbar ul li{
+              margin-left: -10vw;
+            }
+            #navbar ul li:last-child{
+              margin-left: -20vw;
+            }
+          }
+          @media only screen and (max-width:860px) {
+            .head{
+              display: none;
+            }
+            
+            #navbar::before{
+              content: "";
+              background-color: rgb(71, 66, 66);
+              position: absolute;
+              top:0px;
+              left:0px;
+              height: 100%;
+              width:100%;
+              z-index: -1;
+              opacity: 0;
+              border-radius: 50px 10px 50px 10px;
+              
+          }
+            #navbar div{
+              margin: 20px;
+            }
+            #navbar ul li{
+              margin-top: -10px;
+            /* background-color: bisque; */
+          }
+            #navbar ul li{
+              /* background-color: rgb(71, 66, 66); */
+              /* background-color: aquamarine;   */
+            }
+            #navbar ul li{
+              width: fit-content;
+            }
+          }
+          /* end of navbar for mobile css */
+          
+          body{
+            background-color: black;
+          color: white;
+  
+      }     
+      /* navigation */
+      .head{
+          width: 75vw;
+          margin: auto;
+          /* background-color: aqua; */
+  
+        }
+              .head img{
+                  width: 70vw;
+                  align-items: center;
+                  align-content: center;
+                  margin: -30px 50px;
+                  margin-bottom: 20px;
+              /* background-color: rebeccapurple; */
+                 
+              }
+        /* navigation here  */
+        /* Navigation Bar */
+  #navbar{
+      z-index: 2;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      position: sticky;
+      top: 0px;
+  
+      
+  }
+  
+  #navbar::before{
+      content: "";
+      background-color: rgb(71, 66, 66);
+      position: absolute;
+      top:0px;
+      left:0px;
+      height: 100%;
+      width:100%;
+      z-index: -1;
+      /* opacity: 0.7; */
+      border-radius: 50px 10px 50px 10px;
+      
+  }
+  
+  /* Navigation Bar: Logo and Image */
+  #logo{
+      margin: 10px 34px;
+      /* background-color: aquamarine; */
+  }
+  
+  #logo img{
+      height: 50px;
+      margin: 3px 6px;
+  }
+  
+  
+  /* Navigation Bar: List Styling */
+  
+  #navbar ul{
+      /* background-color: aquamarine; */
+      max-width:60vw;
+      display: flex;
+      /* width: 95vw; */
+      margin: auto;
+      font-family: 'Baloo Bhai', cursive;
+      /* align-content: center; */
+      justify-content: center;
+      /* overflow: auto; */
+  
+  }
+  
+  #navbar ul li{ 
+      /* width: fit-content; */
+      /* max-width: 24vw; */
+      /* margin: auto; */
+      /* background-color: rgb(189, 153, 106); */
+      list-style: none;
+      font-size: 1.3rem;
+  }
+  
+  #navbar ul li a{
+      width: max-content;
+      /* background-color: rgb(5, 49, 34); */
+      color: white;
+      display: block;
+      padding: 3px 1vw;
+      border-radius: 20px;
+      text-decoration: none;
+  }
+  
+    </style>
+</head>
+<body>
+     <!-- navigation -->
+     <nav id="navbar">
+        <div id="logo">
+            <img src="resources/Sumit-Salunkhe-15-08-2024.png" alt="LOGO HERE">
+        </div>
+        <ul>
+            <li class="item"><a href="#index.html">|Home|</a></li>
+            <li class="item"><a href="pages/games/games.html">|Games|</a></li>
+            <li class="item"><a href="pages/contact/contact.html">|Contact Us|</a></li>
+            <li class="item"><a href="pages/github-repo/github-repo.html">|Github-repo|</a></li>
+        </ul>
+    </nav>
+    <!-- end of navigation herer  -->
+       
+    <!-- header -->
+    <div class="head">
+        <img src="resources/Sumit-Salunkhe-15-08-2024.png" alt="logo image of sumit salunkhe">
+     </div>
+
+</body>
+</html>

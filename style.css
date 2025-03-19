@@ -46,12 +46,14 @@
             width: fit-content;
           }
         }
+        /* end of navbar for mobile css */
         
         body{
           background-color: black;
         color: white;
 
     }     
+    /* navigation */
     .head{
         width: 75vw;
         margin: auto;
