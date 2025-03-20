@@ -1,5 +1,7 @@
      
-
+    body,.section{
+        background-color: black;
+    }
        /* section this contains all blocks and cards */
        .section{
                 

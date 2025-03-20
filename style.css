@@ -3,21 +3,38 @@
         
         /* css for mobile and tab hiding sumit logo and aligning centre */
         @media only screen and (max-width: 450px) {
-          #navbar ul li:nth-child(2n){
-            margin-top: 20px;
-          }
-          #navbar ul li{
-            margin-left: -10vw;
-          }
-          #navbar ul li:last-child{
-            margin-left: -20vw;
-          }
+        #navbar{
+          /* display: flex; */
+          /* justify-content: left; */
+        }
+          #navbar #ul ul{
+          
+          display: flex;
+          flex-flow: column;
+          justify-content: center;
+          /* background-color: blue; */
+          /* width: 99vw; */
+         }
+         #ul ul li{
+          width: fit-content;
+          margin: 5px 0px;
+          /* margin: auto; */
+         }
+         
+         
         }
         @media only screen and (max-width:860px) {
+          #navbar{
+            /* background-color: antiquewhite; */
+            
+          }
           .head{
             display: none;
           }
-          
+          #logo{
+            /* background-color: rgb(31, 54, 46); */
+            
+          }
           #navbar::before{
             content: "";
             background-color: rgb(71, 66, 66);
@@ -32,18 +49,32 @@
             
         }
           #navbar div{
-            margin: 20px;
+            /* margin: 20px; */
+          }
+          #navbar #ul ul{
+            width: max-content;
+            /* padding: 10px; */
+            /* background-color: aquamarine; */
           }
           #navbar ul li{
-            margin-top: -10px;
+            /* margin-top: -10px; */
           /* background-color: bisque; */
         }
           #navbar ul li{
-            /* background-color: rgb(71, 66, 66); */
+            background-color: rgb(71, 66, 66);
             /* background-color: aquamarine;   */
           }
           #navbar ul li{
             width: fit-content;
+          }
+          #ul{
+           
+
+            /* background-color: #fff; */
+          }
+          #ul ul{
+            margin-left: -10px;
+            /* background-color: blueviolet; */
           }
         }
         /* end of navbar for mobile css */
@@ -112,10 +143,11 @@
 
 #navbar ul{
     /* background-color: aquamarine; */
-    max-width:60vw;
+    /* max-width:60vw; */
     display: flex;
+    margin-top: 20px;
     /* width: 95vw; */
-    margin: auto;
+    /* margin: auto; */
     font-family: 'Baloo Bhai', cursive;
     /* align-content: center; */
     justify-content: center;
@@ -129,7 +161,7 @@
     /* margin: auto; */
     /* background-color: rgb(189, 153, 106); */
     list-style: none;
-    font-size: 1.3rem;
+    font-size: 1.2rem;
 }
 
 #navbar ul li a{
@@ -191,7 +223,15 @@
               border-radius: 20px;
             }
             
-
+/* information about web */
+.info{
+  margin-top: 100px;
+  /* background-color: aquamarine; */
+  text-align: center;
+}
+.info p{
+  font-size: 20px;
+}
 
             
               
