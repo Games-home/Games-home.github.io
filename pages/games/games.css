@@ -2,18 +2,22 @@
     body,.section{
         background-color: black;
     }
+    /* card */
+    .card{
+        display: flex;
+        justify-content: space-evenly;
+        flex-wrap: wrap;
+    }
        /* section this contains all blocks and cards */
        .section{
                 
         display: flex;
-        
-
         background-color: rgb(76, 72, 67);
-        padding: 10px;
-        margin: 20px;
-        
+        padding: 5px;
+        margin: 10px;
+        width: fit-content;
         border-radius: 20px;
-
+        
         
         
     }
@@ -28,15 +32,15 @@
     }
     /* this hold all the cards  */
     .block{
-        border: black solid 1px;
+        /* border: black solid 1px; */
         min-width: 200px;
         display: flex;
         flex-flow: column;
         justify-content: space-between;
     }
 /*cards design */
-    
-    #card1,#card2,#card3,#card4,#card5,#card6,#card7,#card8 {
+    /* .block equivalent to #card1-13 */
+    .block {
         /* margin: auto; */
         width: 200px;
         height: 250px;
@@ -106,6 +110,36 @@
         background-repeat: no-repeat;
         
     }
+    #card9{
+        background-image: url(htmlgamessite/4winds/4winds200.png);
+        background-size: contain;
+        background-repeat: no-repeat;
+        
+    }
+    #card10{
+        background-image: url(htmlgamessite/bubbleshooter/bubble_shooter200.webp);
+        background-size: contain;
+        background-repeat: no-repeat;
+        
+    }
+    #card11{
+        background-image: url(htmlgamessite/mystical_forest/mysticalforest200.webp);
+        background-size: contain;
+        background-repeat: no-repeat;
+        
+    }
+    #card12{
+        background-image: url(htmlgamessite/slide_wood/slidewood200.webp);
+        background-size: contain;
+        background-repeat: no-repeat;
+        
+    }
+    #card13{
+        background-image: url(htmlgamessite/suduku_classic/sudokuclassic200.webp);
+        background-size: contain;
+        background-repeat: no-repeat;
+        
+    }
 
     
 
@@ -136,7 +170,9 @@
         cursor: pointer;
     }
 
-
+    .contentofblock{
+        display: none;
+    }
 
 
       /* customized game css for mobiles  */
