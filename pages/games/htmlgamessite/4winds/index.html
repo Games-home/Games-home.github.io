@@ -12,9 +12,72 @@
             margin: 10px;
            height: 45vw;
         }
+        /* css for rotate your device*/
+        .rotate{
+            
+            height: 100%;
+            width: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+          }
+          .phone {
+            margin-top: 30px;
+            height: 50px;
+            width: 100px;
+            border: 3px solid rgb(0, 0, 0);
+            border-radius: 10px;
+            animation: rotate 1.5s ease-in-out infinite alternate;
+            display: none; 
+            
+        }
+        
+        .message {
+            color: rgb(0, 0, 0);
+            font-size: 1em;
+            margin-top: 40px;
+            display: none; 
+          }
+          
+          @keyframes rotate {
+            0% {
+                  transform: rotate(0deg)
+              }
+              50% {
+                  transform: rotate(-90deg)
+              }
+              100% {
+                  transform: rotate(-90deg)
+              }
+          }
+          
+          @media only screen and (max-device-width: 812px) and (orientation: portrait) {
+            .phone, .message {
+              display: block;
+              
+              
+            }
+            .rotate{
+                position: absolute;
+                height: 90vw;
+                top: 0%;
+                background-color: rgb(255, 255, 255);
+                
+            }
+          }
     </style>
 </head>
 <body>
     <div><script src="https://cdn.htmlgames.com/embed.js?game=4Winds&amp;bgcolor=white"></script></div>
+    <!-- roatate your device amination -->
+     <div class="rotate">
+
+         <div class="phone">
+        </div>
+        <div class="message">
+            Please rotate your device!
+        </div>
+    </div>
 </body>
 </html>
