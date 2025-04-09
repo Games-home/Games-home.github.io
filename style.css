@@ -1,84 +1,6 @@
 
-        
-        
-        /* css for mobile and tab hiding sumit logo and aligning centre */
-        @media only screen and (max-width: 450px) {
-        #navbar{
-          /* display: flex; */
-          /* justify-content: left; */
-        }
-          #navbar #ul ul{
-          
-          display: flex;
-          flex-flow: column;
-          justify-content: center;
-          /* background-color: blue; */
-          /* width: 99vw; */
-         }
-         #ul ul li{
-          width: fit-content;
-          margin: 5px 0px;
-          /* margin: auto; */
-         }
-         
-         
-        }
-        @media only screen and (max-width:860px) {
-          #navbar{
-            /* background-color: antiquewhite; */
-            
-          }
-          .head{
-            display: none;
-          }
-          #logo{
-            /* background-color: rgb(31, 54, 46); */
-            
-          }
-          #navbar::before{
-            content: "";
-            background-color: rgb(71, 66, 66);
-            position: absolute;
-            top:0px;
-            left:0px;
-            height: 100%;
-            width:100%;
-            z-index: -1;
-            opacity: 0;
-            border-radius: 50px 10px 50px 10px;
-            
-        }
-          #navbar div{
-            /* margin: 20px; */
-          }
-          #navbar #ul ul{
-            width: max-content;
-            /* padding: 10px; */
-            /* background-color: aquamarine; */
-          }
-          #navbar ul li{
-            /* margin-top: -10px; */
-          /* background-color: bisque; */
-        }
-          #navbar ul li{
-            background-color: rgb(71, 66, 66);
-            /* background-color: aquamarine;   */
-          }
-          #navbar ul li{
-            width: fit-content;
-          }
-          #ul{
-           
-
-            /* background-color: #fff; */
-          }
-          #ul ul{
-            margin-left: -10px;
-            /* background-color: blueviolet; */
-          }
-        }
-        /* end of navbar for mobile css */
-        
+        /* lets hide all the css for nav bar cause recreated in navstyle.css under src styles  */
+       
         body{
           background-color: black;
         color: white;
@@ -102,32 +24,7 @@
             }
       /* navigation here  */
       /* Navigation Bar */
-#navbar{
-    z-index: 2;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    position: sticky;
-    top: 0px;
 
-    
-}
-
-#navbar::before{
-    content: "";
-    background-color: rgb(71, 66, 66);
-    position: absolute;
-    top:0px;
-    left:0px;
-    height: 100%;
-    width:100%;
-    z-index: -1;
-    /* opacity: 0.7; */
-    border-radius: 50px 10px 50px 10px;
-    
-}
-
-/* Navigation Bar: Logo and Image */
 #logo{
     margin: 10px 34px;
     /* background-color: aquamarine; */
@@ -139,90 +36,7 @@
 }
 
 
-/* Navigation Bar: List Styling */
 
-#navbar ul{
-    /* background-color: aquamarine; */
-    /* max-width:60vw; */
-    display: flex;
-    margin-top: 20px;
-    /* width: 95vw; */
-    /* margin: auto; */
-    font-family: 'Baloo Bhai', cursive;
-    /* align-content: center; */
-    justify-content: center;
-    /* overflow: auto; */
-
-}
-
-#navbar ul li{ 
-    /* width: fit-content; */
-    /* max-width: 24vw; */
-    /* margin: auto; */
-    /* background-color: rgb(189, 153, 106); */
-    list-style: none;
-    font-size: 1.2rem;
-}
-
-#navbar ul li a{
-    width: max-content;
-    /* background-color: rgb(5, 49, 34); */
-    color: white;
-    display: block;
-    padding: 3px 1vw;
-    border-radius: 20px;
-    text-decoration: none;
-}
-
-#navbar ul li a:hover{
-    color: black;
-    background-color: white;
-}
-
-            /*
-            car moving animation 
-            */
-            .car-movement {
-                overflow: hidden;
-                font-size: 40px;
-                height: 50px;
-              }
-              
-              .car-movement > .car {
-                position: relative;
-                display: inline-block;
-                animation: linear infinite;
-                animation-name: run;
-                animation-duration: 5s;
-              }
-              
-              
-              @keyframes run {
-                0% {
-                  transform: rotateY(180deg);
-                  left: -100px;
-                }
-                50% {
-                  transform: rotateY(180deg);
-                  left: 100%;
-                }
-                51% {
-                  transform: rotateY(0deg);
-                  left: calc(100% + 100px);
-                }
-                100% {
-                  transform: rotateY(0deg);
-                  left: -100px;
-                }
-            }
-     
-           
-           
-            .nav .btn{
-              box-sizing: border-box;
-              border-radius: 20px;
-            }
-            
 /* information about web */
 .info{
   margin-top: 100px;
