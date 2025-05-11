@@ -3,11 +3,11 @@ import './App.css'
 import '../src/styles/navstyle.css'
 import Navbar from './components/Navbar';
 
-function MyButton() {
-  return (
-    <button>I am a button</button>
-  );
-}
+// function MyButton() {
+//   return (
+//     <button>I am a button</button>
+//   );
+// }
 function App() {
   // const [count, setCount] = useState(0)
 
